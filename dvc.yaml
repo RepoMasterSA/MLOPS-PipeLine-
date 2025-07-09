@@ -15,10 +15,10 @@ stages:
     outs:
     - data/interim
   feature_engineering:
-    cmd: python src/feature_eng.py
+    cmd: python src/feature_engineering.py
     deps:
     - data/interim
-    - src/feature_eng.py
+    - src/feature_engineering.py
     params:
     - feature_engineering.max_features
     outs:
